@@ -33,6 +33,7 @@ deps:
 build: submodule deps
 	rm -rf $(BUILD_DIR)
 	cp -R upstream $(BUILD_DIR)
+	patch -D $(BUILD_DIR) -p1 < patches/tar-0001-fix-build-failure.patch
 	cd $(BUILD_DIR) && ./bootstrap
 	cd $(BUILD_DIR) && CC=musl-gcc CFLAGS='$(CFLAGS)' FORCE_UNSAFE_CONFIGURE=1 ./configure $(PATH_FLAGS) $(CONF_FLAGS)
 	cd $(BUILD_DIR) && make DESTDIR=$(RELEASE_DIR) install
