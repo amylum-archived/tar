@@ -15,7 +15,6 @@ build do
   configure 'FORCE_UNSAFE_CONFIGURE' => '1'
   make
   install
-  rm 'usr/lib/charset.alias'
 end
 
 test do
