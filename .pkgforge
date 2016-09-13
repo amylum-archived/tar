@@ -1,0 +1,22 @@
+name 'tar'
+org 'amylum'
+
+licenses 'COPYING'
+
+configure_flags(
+  prefix: '/usr',
+)
+
+harden
+
+build do
+  run './bootstrap'
+  configure, 'FORCE_UNSAFE_CONFIGURE' => '1'
+  make
+  install
+  rm 'usr/lib/charset.alias'
+end
+
+test do
+  run 'tar --version'
+end
