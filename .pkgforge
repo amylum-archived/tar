@@ -7,7 +7,7 @@ configure_flags(
   prefix: '/usr',
 )
 
-cflags %w(-Wno-error=parentheses -Werror=unused-value)
+cflags %w(-Wno-error=parentheses -Wn-error=unused-value)
 harden
 
 build do
