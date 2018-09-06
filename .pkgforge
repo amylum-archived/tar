@@ -8,7 +8,7 @@ configure_flags(
 )
 
 harden
-cflags %w(-Wno-error=parentheses -Wno-error=unused-value -Wno-error=implicit-fallthrough -Wno-error=format-overflow)
+cflags %w(-Wno-error=parentheses -Wno-error=unused-value -Wno-error=implicit-fallthrough -Wno-error=format-overflow -Wno-error=abi)
 
 build do
   run './bootstrap'
