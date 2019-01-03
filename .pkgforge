@@ -8,14 +8,13 @@ configure_flags(
 )
 
 harden
-cflags %w(-Wno-error=parentheses -Wno-error=unused-value -Wno-error=implicit-fallthrough -Wno-error=format-overflow -Wno-error=abi -Wno-error=stringop-truncation)
+cflags %w(-Wno-error=parentheses -Wno-error=cast-align)
 
 build do
   run './bootstrap'
   configure 'FORCE_UNSAFE_CONFIGURE' => '1'
   make
   install
-  rm 'usr/lib/charset.alias'
 end
 
 test do
