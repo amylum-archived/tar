@@ -1,9 +1,9 @@
 tar
 ==========
 
-[![Build Status](https://img.shields.io/travis/com/amylum/tar.svg)](https://travis-ci.com/amylum/tar)
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/amylum/tar/Build)](https://github.com/amylum/tar/actions))
 [![GitHub release](https://img.shields.io/github/release/amylum/tar.svg)](https://github.com/amylum/tar/releases)
-[![GPL3 Licensed](http://img.shields.io/badge/license-GPL3-green.svg)](https://tldrlegal.com/license/gnu-general-public-license-v3-(gpl-3))
+[![License](https://img.shields.io/github/license/amylum/tar)](https://github.com/amylum/tar/blob/master/LICENSE)
 
 Package repo for [tar](http://www.gnu.org/software/tar/tar.html)
 
